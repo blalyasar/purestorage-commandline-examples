@@ -61,5 +61,38 @@ CT0.FC1  fc              2023-01-21 23:57:03 +03  0                  0          
 
 
 
++---------+------------+-------------------------------+------------+----------------------+---------------++
+
+> ARRAY UZERINDE LATENCY - GECIKMELERI GORMEK ICIN
+
+```
+purearray monitor --latency
+```
+
+Time                     SAN us/op (read)  Queue us/op (read)  QoS Rate Limit us/op (read)  us/op (read)  us/op cache reduction (read)  SAN us/op (write)  Queue us/op (write)  QoS Rate Limit us/op (write)  us/op (write)
+
+2023-01-22 00:08:35 +03  253               13                  0                            897           -                             212                5                    0                             167
+
+
+
++---------+------------+-------------------------------+------------+----------------------+---------------++
+
+
+> BUTUN VOLUME BILGILERINI CSV CIKTI OLARAK ALMAK ICIN 
+
+```
+purevol list --csv --space --sort size
+```
+
+OUTPUT:
+
+Name,Size,Thin Provisioning,Data Reduction,Total Reduction,Unique,Snapshots,Total
+
+VOL0,1073741824,1.0,1.0,1.0,0,0,0
+
+VOL1,1073741824,1.0,1.0,1.0,0,0,0
+
+VOL2,1073741824,1.0,1.0,1.0,0,0,0
+
 
 
