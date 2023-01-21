@@ -38,7 +38,9 @@ purevol list --cli
 Output:
 
 purevol create --size 850G VOL1
+
 purevol create --size 750G VOL2
+
 purevol create --size 700G VOL3
 
 
