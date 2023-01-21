@@ -13,6 +13,7 @@ Time                     Name             Size  Thin Provisioning  Data Reductio
 2023-01-21 17:58:03 +03  < volume name >  850G  -                  2.9 to 1          -                241.01G  0.00       241.01G
 
 
+#+---------+------------+-------------------------------+------------+----------------------+---------------++
 
 > ARRAY'IN SON IOPS DEGERLERINE ERISIM ICIN KULLANILABILIR ARALIK OLARAK BU DEGERLER SECILMELI (choose from '1h', '3h', '24h', '7d', '30d', '90d', '1y')
 ```
