@@ -2,7 +2,11 @@
 
 
 ##### SON 90 GUN BOYUNCA BIR VOLUME'IN  DEGERLERI ICIN KULLANILABILIR
+
+
+```
 purevol list --historical 90d --space < volume name >
+```
 
 Output:
 
