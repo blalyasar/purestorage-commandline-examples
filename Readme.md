@@ -13,7 +13,7 @@ Time                     Name             Size  Thin Provisioning  Data Reductio
 2023-01-21 17:58:03 +03  < volume name >  850G  -                  2.9 to 1          -                241.01G  0.00       241.01G
 
 
-#+---------+------------+-------------------------------+------------+----------------------+---------------++
++---------+------------+-------------------------------+------------+----------------------+---------------++
 
 > ARRAY'IN SON IOPS DEGERLERINE ERISIM ICIN KULLANILABILIR ARALIK OLARAK BU DEGERLER SECILMELI (choose from '1h', '3h', '24h', '7d', '30d', '90d', '1y')
 ```
@@ -28,7 +28,7 @@ Time                     B/s (read)  B/s (write)  op/s (read)  op/s (write)  us/
 
 
 
-#+---------+------------+-------------------------------+------------+----------------------+---------------++
++---------+------------+-------------------------------+------------+----------------------+---------------++
 
 > DAHA ONCE OLUSTURULMUS VOLUME'LERIN KOMUT SATIRINDAN NASIL OLUŞTURULACAGINI GORMEK ICIN BU KOMUT KULLANILABILIR
 ```
@@ -42,5 +42,24 @@ purevol create --size 850G VOL1
 purevol create --size 750G VOL2
 
 purevol create --size 700G VOL3
+
+
++---------+------------+-------------------------------+------------+----------------------+---------------++
+
+
+>  NETWORK CONTROLU SIFIR OLMASI PROBLEM OLMADIGI ANLAMINA GELIYOR
+```
+purenetwork fc monitor --error
+```
+
+Name     Interface Type  Time                     CRC Errors/s (rx)  Link Failures/s (rx)  Loss of Signal Errors/s (rx)  Loss of Sync Errors/s (rx)  Invalid Words/s (tx)
+
+CT0.FC0  fc              2023-01-21 23:57:03 +03  0                  0                     0                             0                           0
+
+CT0.FC1  fc              2023-01-21 23:57:03 +03  0                  0                     0                             0                           0
+
+
+
+
 
 
