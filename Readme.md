@@ -35,7 +35,6 @@ Time                     B/s (read)  B/s (write)  op/s (read)  op/s (write)  us/
 purevol list --cli
 ```
 
-Output:
 
 purevol create --size 850G VOL1
 
@@ -84,7 +83,6 @@ Time                     SAN us/op (read)  Queue us/op (read)  QoS Rate Limit us
 purevol list --csv --space --sort size
 ```
 
-OUTPUT:
 
 Name,Size,Thin Provisioning,Data Reduction,Total Reduction,Unique,Snapshots,Total
 
@@ -93,6 +91,36 @@ VOL0,1073741824,1.0,1.0,1.0,0,0,0
 VOL1,1073741824,1.0,1.0,1.0,0,0,0
 
 VOL2,1073741824,1.0,1.0,1.0,0,0,0
+
+
+
++---------+------------+-------------------------------+------------+----------------------+---------------++
+
+
+> Host'u listelemek ve Hosta bağlı Volume'leri listelemek
+
+```
+purehost list volname 
+```
+
+Name   WWN  IQN                                       NQN  Host Group
+bilal  -    iqn.yyyy-mm-dd.x.com:xx:bilal  -    -
+
+
+
++---------+------------+-------------------------------+------------+----------------------+---------------++
+
+
+```
+purehost list volname --connect
+```
+
+
+Name   LUN  Vol     Host Group
+Hostname  1    Vol0  -
+Hostname  2    Vol1  -
+Hostname  3    Vol2  -
+Hostname  4    Vol3  -
 
 
 
