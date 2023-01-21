@@ -25,3 +25,20 @@ Output:
 Time                     B/s (read)  B/s (write)  op/s (read)  op/s (write)  us/op (read)  us/op (write)  Queue us/op
 2023-01-21 22:20:02 +03  86.04M      568.49M      3.42K        21.42K        688           234            6
 2023-01-21 22:20:32 +03  60.06M      568.89M      3.31K        23.29K        654           229            5
+
+
+
+#+---------+------------+-------------------------------+------------+----------------------+---------------++
+
+> DAHA ONCE OLUSTURULMUS VOLUME'LERIN KOMUT SATIRINDAN NASIL OLUŞTURULACAGINI GORMEK ICIN BU KOMUT KULLANILABILIR
+```
+purevol list --cli
+```
+
+Output:
+
+purevol create --size 850G VOL1
+purevol create --size 750G VOL2
+purevol create --size 700G VOL3
+
+
